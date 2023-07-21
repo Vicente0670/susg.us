@@ -22,4 +22,4 @@ jobs:
             cd susg.us
             git pull https://github.com/Vicente0670/susg.us
             docker build -t susgus .
-            docker run --name susgus -d -p 3600:3600  susgus
+            docker run --name susgus -d -p 42069:42069  susgus

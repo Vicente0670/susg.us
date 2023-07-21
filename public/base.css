@@ -1,0 +1,121 @@
+/* applies to all pages */
+
+*:not(a) {
+    cursor: default;
+  }
+  *::selection {
+    background: #f2f28e;
+    color: #111;
+  }
+
+  html, body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, #181826, #3f3f61, #7272ac);
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 7vh;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 5rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 4rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 3.5rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 3rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  h6 {
+    font-size: 2.5rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    font-size: 2rem;
+    font-family: "Roboto Mono";
+    color: #cDD6f4;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    font-size: 2rem;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #eee;
+    text-decoration: none;
+    transition: .25s;
+    z-index: 3;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    transition: .25s;
+    animation: hyperlink 1s ease-in-out infinite;
+  }
+
+  @keyframes hyperlink {
+    0%, 100% {
+      color: #eee;
+    }
+    50% {
+      color: #000;
+    }
+  }
+
+  .cam-dot {
+    position: fixed;
+    height: 6vh;
+    width: 6vh;
+    margin: 2.5% 0 0 3%;
+    padding: 0;
+    z-index: 2;
+  
+    background: #f00;
+    border-radius: 1000000px;
+    animation: blink 2s infinite step-start;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,34 @@
+--- 
+interface Props {
+	title: string;
+	description: string;
+}
+
+const url = Astro.url.toString();
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+
+		<title>{title}</title>
+		<meta name="description" content="Astro description">
+		<meta property="og:title" content={title}>
+		<meta property="og:site_name" content="susgus">
+		<meta property="og:url" content={url}>
+		<meta property="og:description" content={description}>
+		<meta property="og:type" content="why? i don't know">
+		<meta property="og:image" content="/favicon.png">
+
+		<link href="https://susg.vicente0670.repl.co/css/base.css" type="text/css" rel="stylesheet">
+		<meta name="keywords" content="susgus, susg.us, susg, suspicious gus, link, vicente0670, vicente 0670, vicente yt, vicente0670 yt">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

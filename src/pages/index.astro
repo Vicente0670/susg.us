@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EnderLinks from "../components/EnderLinks.astro";
+import AngeloLinks from "../components/AngeloLinks.astro";
+import VicenteLinks from "../components/VicenteLinks.astro";
+---
+
+<Layout title="susg.us" description="pretty much does everything i want">
+    <div class="cam-dot"/>
+
+	<main class="container-1">
+		<h1>susg.us</h1>
+		<p>pretty much does everything i want</p>
+  
+		<noscript>
+		  <p class="jsmsg" id="jsmsg"><i>For the best experience, enable JavaScript, but I'm not forcing you ¯\_(ツ)_/¯</i></p>
+		</noscript>
+  
+		<p class="pcmsg" id="pcmsg"><i>For the best experience, use your browser on desktop, but I'm not forcing you ¯\_(ツ)_/¯</i></p>
+		<img id="arrow-img" src="https://susg.vicente0670.repl.co/assets/img/arrow.gif"></img>
+	</main>
+	
+	<tips>
+		<div class="container-2-tooltip-1" id="tip-1" onmouseenter="tip1()" onmouseleave="tip1out()">
+			<VicenteLinks>
+				<p>Social Media!</p>
+			</VicenteLinks>
+		  </div>
+	  
+		  <div class="container-2-tooltip-2" id="tip-2" onmouseenter="tip2()" onmouseleave="tip2out()">
+	expect		<EnderLinks/>
+		  </div>
+		  <div class="container-2">
+			<div class="container-2-info">
+			  <h1><span class="container-2-info-title">What is susg.us?</span></h1>
+			  <p>susg.us is a domain owned and coded by <span class="a-pseudo" id="tip-1" onmouseenter="tip1()" onmouseleave="tip1out()">Vicente0670</span> and hosted by <span class="a-pseudo" id="tip-2" onmouseenter="tip2()" onmouseleave="tip2out()">Ender2K89</span>.</p>
+			</div>
+		  </div>
+	</tips>
+
+    <noscript> <!-- Blue box menu when user has no JS enabled -->
+		<div class="nojs">
+			<VicenteLinks>
+				<h4>Find us here!</h4><br>
+				<h6>Vicente0670</h6>
+			</VicenteLinks>
+			
+			<h6>Ender2K89</h6>
+			<a href="https://discord.com/users/1022842005920940063" target="_blank" title="ender's profile! very cool" class="b1-discord">Discord</a><br>
+			<a href="https://korino.dev/" target="_blank" title="ender's website!" class="b2-website">Website</a>
+		</div>
+    </noscript>
+
+    <div class="nopc" id="nopc">
+		<VicenteLinks>
+			<h4>Find us here!</h4><br>
+			<h6>Vicente0670</h6>
+		</VicenteLinks>
+      <h6>Ender2K89</h6>
+      <a href="https://discord.com/users/1022842005920940063" target="_blank" title="ender's profile! very cool" class="b1-discord">Discord</a><br>
+      <a href="https://korino.dev/" target="_blank" title="ender's website!" class="b2-website">Website</a>
+    </div>
+    <div class="container-3">
+      <div class="container-3-info">
+        <h1>What is this domain utilised for?</h1>
+        <p>I'm using this domain as an image/video host as well as a link shortener.</p>
+      </div>
+    </div>
+    <div class="container-4-tooltip" id="tip-3" onmouseenter="tip3()" onmouseleave="tip3out()">
+		<AngeloLinks>
+			<p>Social Media!</p>
+		</AngeloLinks>
+    </div>
+    <div class="container-4">
+      <div class="container-4-info">
+        <h1>OK... What's with the domain name?</h1>
+        <p>The reason I picked susg.us is because it is an inside joke between me and <span class="a-pseudo" onmouseenter="tip3()" onmouseleave="tip3out()">Angelo5181</span>.<br>
+        We were making jokes about this before we discovered someone that made it a reality, shoutout to the <a href="https://amogus.fandom.com/wiki/Susgus_(Among_Us)" target="_blank" title="Where Susgus came from.">Amogus Fandom Wiki</a>.</p>
+      </div>
+    </div>
+    <noscript>
+    <div class="nojs2">
+		<AngeloLinks>
+			<h4>Check Angelo5181 out!</h4>
+			<h6>Angelo5181:</h6>
+		</AngeloLinks>
+    </div>
+    </noscript>
+    <div class="nopc2" id="nopc2">
+		<AngeloLinks>
+			<h4>Check Angelo5181 out!</h4>
+			<h6>Angelo5181:</h6>
+		</AngeloLinks>
+    </div>
+</Layout>
+
+<script>
+	const tips = document.querySelectorAll("tip");
+
+	tips.forEach((tip) => {
+		tip.addEventListener("mouseenter", (event) => {
+			tip.style.display = "block";
+		});
+
+		tip.addEventListener("mouseleave", (event) => {
+			tip.style.display = "none";
+		});
+	});
+</script>

@@ -4,22 +4,20 @@ import Redirection from "../components/Redirection.astro";
 ---
 
 <Layout title="linktree | susg.us" description="Vicente0670's Linktree.">
-    ...
+    <script>
+        function redirect() {
+            location.host == "https://linktr.ee/vicente0670";
+        }
+    </script>
+    <style>
+        html, body {
+            background: #000;
+            align-text: center;
+        }  
+    </style>
 </Layout>
 
-<body onload="redirect()"/>
+<body onload="redirect()">
 
 <Redirection></Redirection>
 <a href="https://linktr.ee/vicente0670" title="I think this is where you're going.">https://linktr.ee/vicente0670</a>
-
-<style>
-    html, body {
-        background: #000;
-        align-text: center;
-    }  
-</style>
-<script>
-    function redirect() {
-        location.host == "https://linktr.ee/vicente0670";
-    }
-</script>

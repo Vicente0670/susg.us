@@ -2,18 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="susg.us" description="...">
+<Layout title="linktree | susg.us" description="Vicente0670's Linktree.">
     ...
 </Layout>
 
-<script>
-      function redirect() {
-        window.location.replace("...");
-      }
-      
-      setTimeout("redirect()", 1500);
-</script>
-
+<body onload="redirect()"/>
 <style>
-    ...
+    html, body {
+        background: #000;
+    }  
 </style>
+<script>
+    function redirect() {
+        location.host == "https://linktr.ee/vicente0670";
+    }
+</script>

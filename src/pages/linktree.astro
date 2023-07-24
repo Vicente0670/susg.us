@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Redirection from "../components/Redirection.astro";
 ---
 
 <Layout title="linktree | susg.us" description="Vicente0670's Linktree.">
@@ -7,9 +8,14 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <body onload="redirect()"/>
+
+<Redirection></Redirection>
+<a href="https://linktr.ee/vicente0670" title="I think this is where you're going.">https://linktr.ee/vicente0670</a>
+
 <style>
     html, body {
         background: #000;
+        align-text: center;
     }  
 </style>
 <script>

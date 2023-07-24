@@ -6,7 +6,7 @@ import Redirection from "../components/Redirection.astro";
 <Layout title="linktree | susg.us" description="Vicente0670's Linktree.">
     <script>
         function redirect() {
-            location.host == "https://linktr.ee/vicente0670";
+            window.location.host == "https://linktr.ee/vicente0670";
         }
     </script>
     <style>
@@ -18,6 +18,8 @@ import Redirection from "../components/Redirection.astro";
 </Layout>
 
 <body onload="redirect()">
+    <p></p>
+</body>
 
 <Redirection></Redirection>
 <a href="https://linktr.ee/vicente0670" title="I think this is where you're going.">https://linktr.ee/vicente0670</a>

@@ -20,6 +20,6 @@ jobs:
             docker stop susgus
             docker rm susgus
             cd susg.us
-            git pull https://github.com/Vicente0670/susg.us
+            git pull
             docker build -t susgus .
             docker run --name susgus -d -p 42069:42069  susgus

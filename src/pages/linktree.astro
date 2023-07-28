@@ -1,25 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Redirection from "../components/Redirection.astro";
+import LinkLayout from "../layouts/LinkLayout.astro";
 ---
 
-<Layout title="linktree | susg.us" description="Vicente0670's Linktree.">
-    <script>
-        function redirect() {
-            window.location.host == "https://linktr.ee/vicente0670";
-        }
-    </script>
-    <style>
-        html, body {
-            background: #000;
-            align-text: center;
-        }  
-    </style>
-</Layout>
-
-<body onload="redirect()">
-    <p></p>
-</body>
-
-<Redirection></Redirection>
-<a href="https://linktr.ee/vicente0670" title="I think this is where you're going.">https://linktr.ee/vicente0670</a>
+<LinkLayout title="linktree | susg.us" description="Vicente0670's Linktree." url="https://linktr.ee/vicente0670"/>

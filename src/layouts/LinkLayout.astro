@@ -35,17 +35,30 @@ const content = `0; url=${url}`
 		<link href="./css/base.css" type="text/css" rel="stylesheet">
 		<meta name="keywords" content="susgus, susg.us, susg, suspicious gus, link, vicente0670, vicente 0670, vicente yt, vicente0670 yt">
 	</head>
-	<body>
+	<body class="redirect-fail">
 		<h1>Trouble redirecting?</h1>
-        <h2>You may have JavaScript disabled.</h2>
-        <p>Oh well. Here, click on this link to get to where you need to go!</p>
-        <a href={url} title="I think this is where you're going.">{url}</a>
+        	<h2>You may have JavaScript disabled.</h2>
+        	<p>Oh well. Here, click on this link to get to where you need to go!</p>
+        	<a href={url} title="I think this is where you're going.">{url}</a>
 	</body>
 </html>
 
 <style>
-    html, body {
-        background: #000;
-        align-text: center;
-    }  
+    	html, body {
+        	background: #000;
+        	align-text: center;
+	}
+	.redirect-fail {
+		opacity: 0;
+		animation: r-f 1s linear;
+		animation-delay: 3s;
+	}
+	@keyframes r-f {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 </style>

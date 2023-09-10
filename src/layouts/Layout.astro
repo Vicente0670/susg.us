@@ -17,7 +17,7 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{title}</title>
-		<meta name="description" content="Astro description">
+		<meta name="description" content="{description}">
 		<meta property="og:title" content={title}>
 		<meta property="og:site_name" content="susgus">
 		<meta property="og:url" content={url}>
@@ -31,6 +31,11 @@ const { title, description } = Astro.props;
 
 		<link href="/css/base.css" type="text/css" rel="stylesheet">
 		<meta name="keywords" content="susgus, susg.us, susg, suspicious gus, link, vicente0670, vicente 0670, vicente yt, vicente0670 yt">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="revisit-after" content="30 days">
+		<meta name="author" content="Vicente0670">
 	</head>
 	<body>
 		<slot/>

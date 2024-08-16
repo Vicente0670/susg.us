@@ -1,0 +1,13 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color-scheme: dark;
+
+  color: white;
+  background: black;
+}
+/* and its gone */
+/* what is */
+/* most of the page */
+/* yeah we just removed the entire css.. go to src/page.tsx to edit ur page */

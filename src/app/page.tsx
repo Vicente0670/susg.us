@@ -7,7 +7,9 @@ export default function Home() {
         <h1>
           susg.us
         </h1>
-        <p>just here for the funnies</p>
+        <p>
+          done
+        </p>
       </div>
     </main>
   );

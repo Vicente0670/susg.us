@@ -7,6 +7,8 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500",
 export const metadata: Metadata = {
   title: "susg.us",
   description: "wip",
+  keywords: "vicente0670, susgus, among us, susg.us",
+  robots: "all",
 };
 
 export default function RootLayout({
@@ -16,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" />
       <body className={roboto.className}>{children}</body>
     </html>
   );

@@ -1,9 +1,17 @@
+:root {
+  --accent-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-*::selection {_  
+
+*::selection {
+  background: #000;
+  color: #000;
 }
+
 html, body {
   max-width: 100vw;
   overflow-x: clip;
@@ -11,18 +19,23 @@ html, body {
   background: black;
   touch-action: manipulation;
 }
+
 h1, h2, h3 {
   
 }
+
 h1 {
   font-size: 4rem;
 }
+
 h2 {
   font-size: 3rem;
 }
+
 h3 {
   font-size: 2rem;
 }
+
 p {
   font-size: 1rem;
 }

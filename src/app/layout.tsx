@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
+const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   themeColor: "#117e2b",

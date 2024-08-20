@@ -1,0 +1,12 @@
+.root {
+  padding: 5rem 0;
+  background: red;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 5rem;
+  width: auto;
+  background: green;
+}

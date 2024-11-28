@@ -1,3 +1,7 @@
+/*
+Someone told me it was standard to separate CSS classes in your file.
+Is that true?
+*/
 .root {
   padding: 5rem 0;
   background: red;
